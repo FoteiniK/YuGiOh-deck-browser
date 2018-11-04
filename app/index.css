@@ -4,7 +4,126 @@
   box-sizing: border-box;
 }
 html,
-body {
+body,
+#app {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  background-image: url("https://imghost.io/images/2018/11/03/image-2018-11-032-min.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+/*=====================HEADER-SECTION==============================*/
+.app-header {
+  height: 12vh;
+}
+
+.header-text {
+  padding: 3vh;
+  vertical-align: -webkit-baseline-middle;
+}
+
+/*============================MAIN-Section==========================*/
+
+.container {
+  height: 80vh;
+  margin: 0 30px 30px 30px;
+  display: block;
+}
+
+/****list*****/
+
+.sidebar {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: 34%;
+  border: 10px solid #bf8b44;
+  border-radius: 15px;
+  background: repeating-linear-gradient(
+    120deg,
+    #060606,
+    #b27b4f,
+    #9f561b,
+    #060606
+  );
+  overflow: auto;
+  margin-right: 2%;
+}
+/**TODO: LIST SETTINGS*/
+li {
+  height: 40px;
+}
+
+/*******************scrollbar-settings***********/
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #381f0770;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #1a1515;
+} 
+
+
+/*******card-image************/
+.card-image {
+  display: inline-block;
+  margin-right: 2%;
+  height: 100%;
+  width: 27%;
+}
+img {
+  max-width: 100%;
+  height: -webkit-fill-available;
+}
+
+/**********card-details**************/
+.content {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: 35%;
+  background-image: linear-gradient(to right bottom, #777777c2, #99999979),
+    url("https://wallpapertag.com/wallpaper/middle/7/5/d/144416-yugioh-background-1920x1080-for-lockscreen.jpg#.W91u6dtWR1Q.link");
+  background-size: cover;
+}
+
+/*==================MEDIA QUERIES=============================*/
+@media (max-width: 599px) {
+  .sidebar,
+  .card-image,
+  .content {
+    height: 50%;
+  }
+
+  img {
+    width: -webkit-fill-available;
+  }
+  .card-image {
+    width: 38%;
+  }
+  .sidebar {
+    width: 55%;
+    margin-right: 5%;
+  }
+  .content {
+    width: 98%;
+  }
+}
+/*colors
+#b27b4f
+#060606
+#1a1515
+#9f561b
+#bf8b44*/
