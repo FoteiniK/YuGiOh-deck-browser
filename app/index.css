@@ -52,9 +52,18 @@ body,
   overflow: auto;
   margin-right: 2%;
 }
-/**TODO: LIST SETTINGS*/
-li {
-  height: 40px;
+
+.list-items {
+  margin: 0.5em;
+  border: 3px solid #1a1515;
+  padding: 20px;
+  text-align: center;
+  vertical-align: -webkit-baseline-middle;
+  cursor: pointer;
+}
+.list-items:hover {
+  background-color: #1a1515;
+  color: #b27b4f;
 }
 
 /*******************scrollbar-settings***********/
