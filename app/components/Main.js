@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import CardList from "./CardList";
-
+import CardImage from "./CardImage";
+import CardDetails from "./CardDetails";
 class Main extends Component {
   state = {
     deck: [],
     isError: false,
-    errorFetch: ""
+    errorFetch: "",
+    selectedCard: "",
+    text: ""
   };
   componentDidMount() {
     this.fetchCardData();
@@ -61,21 +64,21 @@ class Main extends Component {
       throw err;
     });
   };
+  selectCard = (name, text) => {
+    console.log(name, text);
+    this.setState({ selectedCard: name, text });
+  };
   render() {
     return (
       <div>
         {console.log(this.state.deck)}
         <div className="container">
-          <CardList deck={this.state.deck} />
-          <div className="card-image">
-            <img
-              src="http://52.57.88.137/api/card_image/Infernoid%20Antra"
-              alt="card name"
-            />
-          </div>
-          <div className="content">
-            <div className="main-content">[[ DETAILS ]]</div>
-          </div>
+          <CardList deck={this.state.deck} selectCard={this.selectCard} />
+          <CardImage selectedCard={this.state.selectedCard} />
+          <CardDetails
+            selectedCard={this.state.selectedCard}
+            text={this.state.text}
+          />
         </div>
       </div>
     );

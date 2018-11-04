@@ -13,7 +13,12 @@ class CardList extends Component {
         <div className="sidebar-content">
           <ul>
             {this.props.deck.map(card => (
-              <li key={card.name}>
+              <li
+                key={card.name}
+                onClick={() => {
+                  this.props.selectCard(card.name, card.text);
+                }}
+              >
                 <div className="list-items">
                   <h4>{card.name}</h4>
                   {card.family ? (

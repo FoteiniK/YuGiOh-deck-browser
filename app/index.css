@@ -99,15 +99,23 @@ img {
 
 /**********card-details**************/
 .content {
+  overflow: auto;
   display: inline-block;
   vertical-align: top;
   height: 100%;
   width: 35%;
-  background-image: linear-gradient(to right bottom, #777777c2, #99999979),
+  background-image: linear-gradient(to right bottom, #777777d3, #999999bb),
     url("https://wallpapertag.com/wallpaper/middle/7/5/d/144416-yugioh-background-1920x1080-for-lockscreen.jpg#.W91u6dtWR1Q.link");
   background-size: cover;
 }
-
+.details {
+  font-size: 1.5em;
+  line-height: 1em;
+  padding: 5vh;
+}
+h2 {
+  padding: 0 5vh 0 5vh;
+}
 /*==================MEDIA QUERIES=============================*/
 @media (max-width: 599px) {
   .sidebar,
