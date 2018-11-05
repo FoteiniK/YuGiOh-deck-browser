@@ -5,6 +5,7 @@ A single-page React application with yu-gi-oh cards. When the user selects a car
 ## App Overview and development proccess
 
 Initial app's setup was done using [webpack](https://github.com/webpack/webpack) , [babel](https://github.com/babel/babel) and [react packages](https://www.npmjs.com/package/react-dom/v/15.6.0-rc.1). In order to get all deck cards info from the beginning, we made multiple fetch requests, using the Promise.all method. All the data returned from fetch requests were pushed to the main deck array. Deck array is passed via props to from parent Main component to children components, so the desired content is displayed accordingly. We keep the state info that changes inside Main, so every time there is a user interaction, children component's content changes in real time.
+Version-control tool:git.
 
 ## Table of Contents
 
