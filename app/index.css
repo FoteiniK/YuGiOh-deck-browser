@@ -72,13 +72,13 @@ body,
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 8px;
   background: #381f0770;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 /* ::-webkit-scrollbar-thumb:hover {
   background: #1a1515;
@@ -91,6 +91,10 @@ body,
   margin-right: 2%;
   height: 100%;
   width: 27%;
+  background-image: url("https://wallpapertag.com/wallpaper/middle/7/f/1/144403-yugioh-background-1920x1080-for-mobile.jpg#.W9_nTo4-W8Q.link");
+  /* background: #a2a2a2; */
+  box-shadow: inset 0px 1px 8px 5px rgba(0, 0, 0, 0.51);
+  background-size: cover;
 }
 img {
   max-width: 100%;
@@ -109,7 +113,7 @@ img {
   background-size: cover;
 }
 .details {
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 1em;
   padding: 5vh;
 }
