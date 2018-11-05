@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CardList from "./CardList";
 import CardImage from "./CardImage";
 import CardDetails from "./CardDetails";
+
 class Main extends Component {
   state = {
     deck: [],
@@ -39,11 +40,12 @@ class Main extends Component {
       "Void Seer"
     ];
     let dataArray = [];
-
+    //Using Promise.all to make multiple fetch requests. Data is pushed to state's deck array
     Promise.all(
       deckNames.map(request => {
         return fetch(`${apiUrl}${request}`)
           .then(response => {
+            //handle response errors
             if (!response.ok) {
               this.setState({
                 isError: true,
@@ -70,7 +72,6 @@ class Main extends Component {
   render() {
     return (
       <div>
-        {console.log(this.state.deck)}
         <div className="container">
           <CardList deck={this.state.deck} selectCard={this.selectCard} />
           <CardImage selectedCard={this.state.selectedCard} />
