@@ -29,6 +29,8 @@ If you don't have npm installed, navigate to npm's [website](https://www.npmjs.c
 
 _coming soon_
 
+NOTE!:App was initially hosted with firebase, but due to mixed-content-blocking error,it could not properly fetch the info. For now, there isn't an HTTPS api version. We are working on an alternative hosting method.
+
 ### Installing
 
 To get started developing right away:
@@ -39,14 +41,6 @@ Using your terminal/command line, get inside the folder where these project file
 #### To run in developer mode
 
 - start the development server with `npm start`
-
-#### To run in build mode
-
-- create a production build with `npm run build`
-- To serve it with a static server run `npm install -g serve`
-- After the static server is installed run `serve -s build`
-
-The production version of the project will run at localhost:5000
 
 ### Dependencies
 
