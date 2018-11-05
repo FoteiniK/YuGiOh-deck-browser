@@ -65,7 +65,6 @@ class Main extends Component {
     });
   };
   selectCard = (name, text) => {
-    console.log(name, text);
     this.setState({ selectedCard: name, text });
   };
   render() {

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const CardDetails = props => {
   return (
@@ -20,5 +21,8 @@ const CardDetails = props => {
       </div>
     </div>
   );
+};
+CardDetails.propTypes = {
+  selectedCard: PropTypes.string.isRequired
 };
 export default CardDetails;
