@@ -1,10 +1,10 @@
 # Yu-Gi-Oh! deck browser app
 
-A single-page React application with yu-gi-oh cards. When the user selects a card-name from the sidebar list,the selected card's detailed content is displayed on the main view.
+A single-page React application with yu-gi-oh cards. When the user selects a card-name from the sidebar list,the selected card's detailed content and image are displayed on the main view.
 
 ## App Overview and development proccess
 
-Initial app's setup was done using [webpack](https://github.com/webpack/webpack) , [babel](https://github.com/babel/babel) and [react packages](https://www.npmjs.com/package/react-dom/v/15.6.0-rc.1)
+Initial app's setup was done using [webpack](https://github.com/webpack/webpack) , [babel](https://github.com/babel/babel) and [react packages](https://www.npmjs.com/package/react-dom/v/15.6.0-rc.1). In order to get all deck cards info from the beginning, we made multiple fetch requests, using the Promise.all method. All the data returned from fetch requests were pushed to the main deck array. Deck array is passed via props to from parent Main component to children components, so the desired content is displayed accordingly. We keep the state info that changes inside Main, so every time there is a user interaction, children component's content changes in real time.
 
 ## Table of Contents
 
@@ -14,8 +14,7 @@ Initial app's setup was done using [webpack](https://github.com/webpack/webpack)
 4.  [Installing](#installing)
 5.  [Dependencies](#dependencies)
 6.  [API](#api)
-7.  [Credits](#credits)
-8.  [Licence](#licence)
+7.  [Licence](#licence)
 
 ## Getting Started
 
@@ -27,6 +26,8 @@ _npm_ :
 If you don't have npm installed, navigate to npm's [website](https://www.npmjs.com/get-npm) to download and install the software.
 
 ## Demo
+
+_coming soon_
 
 ### Installing
 
