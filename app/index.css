@@ -8,7 +8,7 @@ body,
 #app {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
+  background: linear-gradient(to right bottom, #0a3163e7, #15487be7);
   background-image: url("https://imghost.io/images/2018/11/03/image-2018-11-032-min.png");
   background-position: top;
   background-size: cover;
@@ -18,18 +18,17 @@ body,
 /*=====================HEADER-SECTION==============================*/
 .app-header {
   height: 12vh;
+  text-align: center;
 }
 
-.header-text {
-  padding: 3vh;
-  vertical-align: -webkit-baseline-middle;
+.header-image {
+  max-width: 50%;
 }
-
 /*============================MAIN-Section==========================*/
 
 .container {
-  height: 80vh;
-  margin: 0 30px 30px 30px;
+  height: 75vh;
+  margin: 2%;
   display: block;
 }
 
@@ -39,7 +38,7 @@ body,
   display: inline-block;
   vertical-align: top;
   height: 100%;
-  width: 34%;
+  width: 33%;
   border: 10px solid #bf8b44;
   border-radius: 15px;
   background: repeating-linear-gradient(
@@ -50,7 +49,7 @@ body,
     #060606
   );
   overflow: auto;
-  margin-right: 2%;
+  margin-right: 3%;
 }
 
 .list-items {
@@ -84,15 +83,15 @@ body,
   background: #1a1515;
 } 
 
-
 /*******card-image************/
 .card-image {
   display: inline-block;
-  margin-right: 2%;
+  margin-right: 3%;
   height: 100%;
-  width: 27%;
-  background-image: url("https://wallpapertag.com/wallpaper/middle/7/f/1/144403-yugioh-background-1920x1080-for-mobile.jpg#.W9_nTo4-W8Q.link");
-  /* background: #a2a2a2; */
+  width: 26%;
+  background: linear-gradient(to top, #515151, #023163c7);
+  background-image: url("https://i.imgur.com/dR7abbw.jpg");
+
   box-shadow: inset 0px 1px 8px 5px rgba(0, 0, 0, 0.51);
   background-size: cover;
 }
@@ -109,7 +108,7 @@ img {
   height: 100%;
   width: 35%;
   background-image: linear-gradient(to right bottom, #777777d3, #999999bb),
-    url("https://wallpapertag.com/wallpaper/middle/7/5/d/144416-yugioh-background-1920x1080-for-lockscreen.jpg#.W91u6dtWR1Q.link");
+    url("https://i.imgur.com/ERKm2lq.jpg");
   background-size: cover;
 }
 .details {
@@ -120,6 +119,19 @@ img {
 h2 {
   padding: 0 5vh 0 5vh;
 }
+
+/*===========FOOTER SECTION==================================*/
+.footer {
+  height: 5vh;
+}
+.footer > p {
+  color: #838da6;
+}
+.footer > p > a {
+  color: #be8b44;
+  text-decoration: none;
+}
+
 /*==================MEDIA QUERIES=============================*/
 @media (max-width: 599px) {
   .sidebar,
@@ -132,7 +144,7 @@ h2 {
     width: -webkit-fill-available;
   }
   .card-image {
-    width: 38%;
+    width: 37%;
   }
   .sidebar {
     width: 55%;
