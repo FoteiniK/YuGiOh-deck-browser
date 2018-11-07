@@ -7,14 +7,14 @@ html,
 body {
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
+}
+#app {
+  height: 100vh;
   background: linear-gradient(to right bottom, #0a3163e7, #15487be7);
   background-image: url("https://imghost.io/images/2018/11/03/image-2018-11-032-min.png");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-}
-#app {
-  height: 100vh;
 }
 /*=====================HEADER-SECTION==============================*/
 .app-header {
@@ -145,7 +145,7 @@ h2 {
   .sidebar,
   .card-image,
   .content {
-    height: 50%;
+    height: 45%;
   }
 
   img {
@@ -159,7 +159,11 @@ h2 {
     margin-right: 5%;
   }
   .content {
+    margin-top: 2em;
     width: 98%;
+  }
+  .footer {
+    height: auto;
   }
 }
 /*colors
