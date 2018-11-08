@@ -32,6 +32,9 @@ _coming soon_
 
 NOTE!:App was initially hosted with firebase, but due to mixed-content-blocking error,it could not properly fetch the info. For now, there isn't an HTTPS api version. We are working on an alternative hosting method.
 
+Screenshot:
+![Screenshot Of Yugioh App](https://i.imgur.com/OpmU4TB.png)
+
 ### Installing
 
 To get started developing right away:
